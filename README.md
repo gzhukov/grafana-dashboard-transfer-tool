@@ -18,3 +18,6 @@ Import one dashboard:
 `./dashboard_dumper.py --org 150 --token $TOKEN --imp ./result/dashboard.json`  
 Import all dashboards from dir:  
 `./dashboard_dumper.py --org 150 --token $TOKEN --imp_all ./result/`
+
+If you want to change datasource - use `sed`, Luke!:  
+`sed -i 's/"datasource": "ds-old"/"datasource": "ds-new"/g' result/*.json`
